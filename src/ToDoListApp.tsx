@@ -8,7 +8,9 @@ function ToDoListApp() {
   ]);
   const [newTask, setNewTask] = useState("");
 
-  function handleInputChange(event) {
+  function handleInputChange(event: {
+    target: { value: React.SetStateAction<string> };
+  }) {
     setNewTask(event.target.value);
   }
 
@@ -17,12 +19,12 @@ function ToDoListApp() {
     setNewTask("");
   }
 
-  function deleteTask(index) {
+  function deleteTask(index: number) {
     const updatedTask = tasks.filter((_, i) => i !== index);
     setTasks(updatedTask);
   }
 
-  function moveTaskUp(index) {
+  function moveTaskUp(index: number) {
     if (index > 0) {
       const updatedTask = [...tasks];
       [updatedTask[index], updatedTask[index - 1]] = [
@@ -33,7 +35,7 @@ function ToDoListApp() {
     }
   }
 
-  function moveTaskDown(index) {
+  function moveTaskDown(index: number) {
     if (index < tasks.length - 1) {
       const updatedTask = [...tasks];
       [updatedTask[index], updatedTask[index + 1]] = [
