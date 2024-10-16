@@ -1,0 +1,90 @@
+.to-do-list{
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 100px;
+}
+
+h1{
+
+    font-size: 4rem;
+
+}
+
+button{
+    font-size: 1.7rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.5 ease;
+}
+
+.arrangement {
+    text-align: center;
+    padding:0%;
+}
+
+.add-button {
+    background-color: green;
+}
+
+.add-button:hover{
+    background-color: rgb(5, 75, 11);
+}
+
+.delete-button {
+    background-color: red;
+}
+
+.delete-button:hover{
+
+    background-color: rgb(95, 14, 14);
+}
+
+.move-button {
+    background-color: blue;
+}
+
+.move-button:hover{
+    background-color: rgb(10, 10, 73);
+}
+
+.move-button1 {
+    background-color: black;
+}
+
+.move-button1:hover{
+
+    background-color: bisque;
+}
+
+input[type="text"] {
+
+    font-size: 1.6rem;
+    padding: 10px;
+    border: 2px solid;
+}
+
+li{
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 15px;
+    background-color: azure;
+    margin-bottom: 10px;
+    border: 1px solid;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.text{
+    
+    flex: 1;
+
+}
+
+.Tabb {
+    text-align: center;
+}
